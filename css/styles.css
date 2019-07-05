@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-family: consolas;
+    color: white;
+}
+
+
+#calculator {
+    background-color: #16161d;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "info"
+                         "result"
+                         "keyboard";
+    grid-auto-rows: 40% 20% 40%;
+}
+
+#percent, #amount {
+    border-bottom: 2px solid cyan;
+    padding-bottom: 2.5%;
+}
+
+#percent, .lil-subtitle#sub-percent{
+    grid-area: percent;
+}
+
+#switch {
+    grid-area: btn;
+}
+
+#amount, .lil-subtitle#sub-amount {
+    grid-area: amount;
+}
+
+.lil-subtitle {
+    font-size: 1.5vh;
+    padding-top: 20%;
+}
+
+#info {
+    grid-area: info;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    grid-template-areas: "percent"
+                         "btn"
+                         "amount";
+    grid-template-rows: 30% 30% 30%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+#result {
+    grid-area: result;
+    background-color: #1c3038;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 7vh;
+}
+
+#keyboard {
+    grid-area: keyboard;
+    font-size: 3vh;
+    width: 100%;
+    height: 100%;
+    background-color: #16161d
+}
+
+tbody {
+    width: 100%;
+    height: 100%;
+    display: inline-table;
+    align-items: center;
+    text-align: center;
+}
+
+td {
+    width: 33%;
+    height: 25%;
+}
+
+td:hover{
+    transition: 0.1s;
+    background-color: #1c3038;
+}
