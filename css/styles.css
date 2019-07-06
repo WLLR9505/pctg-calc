@@ -6,6 +6,7 @@ body {
     position: absolute;
     font-family: consolas;
     color: white;
+    user-select: none;
 }
 
 
@@ -22,6 +23,7 @@ body {
 #percent, #amount {
     border-bottom: 2px solid cyan;
     padding-bottom: 2.5%;
+    font-size: 4vh;
 }
 
 #percent, .lil-subtitle#sub-percent{
@@ -29,7 +31,10 @@ body {
 }
 
 #switch {
-    grid-area: btn;
+    grid-area: switch;
+    display: grid;
+    align-items: center;
+    padding-left: 25%;
 }
 
 #amount, .lil-subtitle#sub-amount {
@@ -38,7 +43,7 @@ body {
 
 .lil-subtitle {
     font-size: 1.5vh;
-    padding-top: 20%;
+    padding-top: 90px;
 }
 
 #info {
@@ -48,11 +53,18 @@ body {
     text-align: center;
 
     grid-template-areas: "percent"
-                         "btn"
+                         "switch"
                          "amount";
     grid-template-rows: 30% 30% 30%;
     width: 60%;
     margin-left: 20%;
+}
+
+#sub-result {
+    grid-area: result;
+    padding-top: 150px;
+    text-align: center;
+    color: cyan;
 }
 
 #result {
@@ -88,4 +100,5 @@ td {
 td:hover{
     transition: 0.1s;
     background-color: #1c3038;
+    color: cyan;
 }

@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Calculadora Electron</title>
+        <title>Percent Calculator</title>
+        <link href="css/switch.css" rel="stylesheet" type="text/css"/>
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
@@ -10,11 +11,18 @@
         <div id="info">
             <span id="percent">25%</span>
             <span class="lil-subtitle" id="sub-percent">percent</span>
-            <span id="switch">button</span>
+            <span id="switch" class="toogle-button-cover">
+                    <div class="button r" id="button-1">
+                        <input type="checkbox" class="checkbox">
+                        <div class="dot"></div>
+                        <div class="layer"></div>
+                    </div>
+            </span>
             <span id="amount">9905</span>
             <span class="lil-subtitle" id="sub-amount">amount</span>
         </div>
         <div id="result">2476,25</div>
+        <span class="lil-subtitle" id="sub-result">extra info</span>
             <table id="keyboard">
                 <tr>
                     <td class=button>1</td><td class=button>2</td><td class=button>3</td>
