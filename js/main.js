@@ -1,3 +1,6 @@
+var calculator = document.getElementById('calculator');
+calculator.style.maxWidth = (9/16) * document.body.clientHeight + 'px';
+
 var button = new Array(0);
 var btns = document.getElementsByClassName('btn');
 var result = document.getElementById('result');
