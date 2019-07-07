@@ -46,7 +46,7 @@
 }
 
 #button-1 .dot::before {
-    content: 'OFF';
+    content: 'OF';
     position: absolute;
     display: grid;
     align-items: center;
@@ -64,7 +64,7 @@
 }
 
 #button-1 .checkbox:checked + .dot::before {
-    content: 'OF';
+    content: 'OFF';
     left: 40%;
     color: #fff;
     background-color: #ff0000;

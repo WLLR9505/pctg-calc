@@ -26,6 +26,11 @@ body {
     font-size: 4vh;
 }
 
+#amount {
+    border-bottom: 2px solid #00a1a1;
+    min-height: 25px;
+}
+
 #percent, .lil-subtitle#sub-percent{
     grid-area: percent;
 }
@@ -42,7 +47,7 @@ body {
 }
 
 .lil-subtitle {
-    font-size: 1.5vh;
+    font-size: 2vh;
     padding-top: 90px;
 }
 
@@ -61,8 +66,9 @@ body {
 }
 
 #sub-result {
+    visibility: hidden;
     grid-area: result;
-    padding-top: 150px;
+    padding-top: 125px;
     text-align: center;
     color: cyan;
 }
@@ -101,4 +107,5 @@ td:hover{
     transition: 0.1s;
     font-size: 3.5vh;
     color: cyan;
+    background-color: #16161d
 }
